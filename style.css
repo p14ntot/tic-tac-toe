@@ -1,0 +1,78 @@
+:root {
+    --blue-color: rgb(48, 48, 126);
+    background-color: black;
+    color: var(--blue-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+#title{
+    font-family: "Courier New", Courier, monospace; 
+    font-size: 60px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: black;
+}
+#new-game{
+    background-color: black;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#new{
+    color: var(--blue-color);
+    width: 200px;
+    background-color: black;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 80px;
+    cursor: pointer;
+    border: none;
+}
+
+#grid{
+display: none;
+grid-template-rows: repeat(3, 180px);
+grid-template-columns: repeat(3, 180px);
+background-color: black;
+width: 100%;
+height: 600px;
+justify-content: center;
+}
+
+.box{
+    width: 180px;
+    height: 180px;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    background-color: aquamarine;
+}
+
+#who-wins{
+    width: 800px;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+#rules{
+    width: 800px;
+    border: 2px solid var(--blue-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#rules p {
+    color: aliceblue;
+    font-size: 30px;
+}
