@@ -67,7 +67,7 @@ const displayControllerModule = ((board) => {
             //show the winning message
             message.innerHTML = 'THE WINNER IS: ' +player;
             message.style.display = 'block';
-            //
+            
 
             //hide the gameBoard
             const board=document.getElementById('grid');
@@ -76,7 +76,7 @@ const displayControllerModule = ((board) => {
         else if(board[0] === board[3] && board[0] === board[6] && board[0] !== '-'){
             message.innerHTML = 'THE WINNER IS: ' +player;
             message.style.display = 'block';
-            //
+            
 
             //hide the gameBoard
             const board=document.getElementById('grid');
@@ -85,7 +85,7 @@ const displayControllerModule = ((board) => {
         else if(board[0] === board[4] && board[0] === board[8] && board[0] !== '-'){
             message.innerHTML = 'THE WINNER IS: ' +player;
             message.style.display = 'block';
-            //
+            
 
             //hide the gameBoard
             const board=document.getElementById('grid');
@@ -94,7 +94,7 @@ const displayControllerModule = ((board) => {
         else if(board[1] === board[4] && board[1] === board[7] && board[1] !== '-'){
             message.innerHTML = 'THE WINNER IS: ' +player;
             message.style.display = 'block';
-            //
+            
 
             //hide the gameBoard
             const board=document.getElementById('grid');
@@ -103,7 +103,7 @@ const displayControllerModule = ((board) => {
         else if(board[2] === board[5] && board[2] === board[8] && board[2] !== '-'){
             message.innerHTML = 'THE WINNER IS: ' +player;
             message.style.display = 'block';
-            //
+            
 
             //hide the gameBoard
             const board=document.getElementById('grid');
@@ -112,7 +112,7 @@ const displayControllerModule = ((board) => {
         else if(board[2] === board[4] && board[2] === board[6] && board[2] !== '-'){
             message.innerHTML = 'THE WINNER IS: ' +player;
             message.style.display = 'block';
-            //
+            
 
             //hide the gameBoard
             const board=document.getElementById('grid');
@@ -121,7 +121,16 @@ const displayControllerModule = ((board) => {
         else if(board[6] === board[7] && board[6] === board[8] && board[6] !== '-'){
             message.innerHTML = 'THE WINNER IS: ' +player;
             message.style.display = 'block';
-            //message.style.marginLeft = '30%';
+            
+
+            //hide the gameBoard
+            const board=document.getElementById('grid');
+            board.style.display='none';
+        }
+        else if(board[3] === board[4] && board[3] === board[5] && board[3] !== '-'){
+            message.innerHTML = 'THE WINNER IS: ' +player;
+            message.style.display = 'block';
+            
 
             //hide the gameBoard
             const board=document.getElementById('grid');
@@ -130,7 +139,7 @@ const displayControllerModule = ((board) => {
         else if(total===1){
             message.innerHTML = 'IT IS A DRAW !!!'; 
             message.style.display = 'block';
-            //
+            
 
             //hide the gameBoard
             const board=document.getElementById('grid');
@@ -169,22 +178,6 @@ const displayControllerModule = ((board) => {
 
 
 
-const playerFactory = (name,symbol) => {
-    let getPlayerName = ()=>{
-        console.log('the name is '+name +' and the symbol is ' +symbol);
-    }
-    return{
-        getPlayerName,name,symbol
-    }
-}
-
-
-
-
-const playerOne=playerFactory('george','X');
-playerOne.getPlayerName();
-const playeTwo=playerFactory('mike','O');
-playeTwo.getPlayerName();
 
 
 
